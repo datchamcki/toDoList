@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+h1 {
+  margin-bottom: 1.4rem;
+}
+.container-lg {
+  background-color: #fff;
+  height: 100vh;
+}
+.w-80 {
+  width: 80%;
+}
+.form-text {
+  top: 50%;
+  left: 4%;
+  transform: translateY(-60%);
+  opacity: 0.5;
+  user-select: none;
+  pointer-events: none;
+  transition: all 0.25s linear;
+}
+.form input:not(:placeholder-shown) + .form-text,
+.form input:focus + .form-text {
+  top: 0;
+  left: 4%;
+  opacity: 1;
+  background-color: #fff;
+  display: inline-block;
+  padding: 0 5px;
+  color: #86b7fe;
+}
+.add--date {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.add--date input {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn-feature {
+  border: none !important;
+  overflow: hidden;
+}
+.action {
+  transform: scale(1.2);
+}
+.action::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: #86b7fe;
+  animation: flyIn 0.25s forwards linear;
+}
+@keyframes flyIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(50%);
+    transition: all 0.3s linear;
+  }
+}
+.feature {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.btn {
+  border: 1px solid #fff;
+}
+.btn-group {
+  gap: 1.2rem;
+}
+.border-bottom {
+  border-bottom: 1px solid #000 !important;
+}
+.bi {
+  cursor: pointer;
+}
+
+.input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.time {
+  text-decoration: none;
+}
+.btn-group-feature .btn {
+  box-shadow: 0 0 1px #1c1c1c;
+  background-color: #86b7fe;
+  color: #fff !important;
+  box-shadow: 0px 0 0 #fff inset;
+  transition: all 1s linear;
+}
+.btn-group-feature .btn:hover {
+  box-shadow: -400px 0 0 #fff inset;
+  color: #1c1c1c !important;
+  border: 1px solid #86b7fe;
+}
